@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body > *{
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .fb { 
+    font-weight: bold;    
+  }
+
+  p {
+    padding: 2px;
+  }
+
+  .header {
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  .header .selfie {
+    float: left;
+  }
+  .header .infoWrap {
+    float: left;
+    padding-left: 50px;
+  }
+  @media (max-width: 450px) {
+    .header .infoWrap {
+      padding-left: 5px;
+    }
+  }
+  .header .name {
+    font-size: 40px;
+  }
+
+  .header .linkWrap a{
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .title {
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  .work {
+    margin: 10px 0 20px 0;
+  }
+  .workName {
+    font-size: 20px;
+  }
+  .workName a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  .gifLink {
+    display: block;
+    margin: 10px 0;
+    
+  }
+  .gifLink img {
+    width: 100%;
+  }
+  .others {
+    height: 300px;
+  }
+  .others a {
+    color: black;
+  }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img class="selfie" src="./selfie.png" height="165px" alt="selfie">
+    <div class="infoWrap">
+      <p class="name">陈 鑫</p>
+      <p >求职方向：Web 前端工程师</p>
+      <p >手机：15910578275</p>
+      <p >邮箱：owenchen1994@gmail.com</p>
+      <p class="linkWrap">
+        <a href="https://codepen.io/chenxinnn/" target="_blank"><img src="./codepen.png" width="21px" alt="codepen"></a>
+        <a href="https://juejin.im/user/5c7be083518825406d29619d" target="_blank"><img src="./juejin.png" width="25px" alt="juejin"></a>
+        <a href="https://twitter.com/ChenXin_nth" target="_blank"><img src="./twitter.png" width="25px" alt="twitter"></a>
+      </p>
+    </div>
+  </div>
+  <div class="intro">
+    <div class="title">自我简介</div>
+    <p>我叫陈鑫，是一名动画和特效方向的 web 前端工程师。擅长各类 Web 动画：CSS 动画、SVG 动画 和 WebGL / Canvas 动画。</p>
+  </div>
+  <div class="skills">
+    <div class="title">掌握技能</div>
+    <p class="fb">专业技能：</p>
+    <p>熟练掌握 HTML5、CSS3 和 JavaScript。</p>
+    <p>能够利用 CSS 完成较为复杂的 2D 和 3D 特效。</p>
+    <p>熟练掌握 SVG，了解其原理。能够完成较为复杂的大型 SVG 动画。</p>
+    <p>熟悉 Canvas，能够使用 Canvas 实现一些复杂的交互效果。</p>
+    <p>熟悉 Three.js, 能够利用 Three.js 完成复杂的 3D WebGL 动画。</p>
+    <p>了解 WebGL 原生 API 及其原理。能够利用 GLSL 着色器语言编写 Shader。 </p>
+    <p>熟悉浏览器渲染机制，能够编写高性能的 Web 动画。</p>
+    <p>熟悉跨浏览器的兼容，对各类动画在不同浏览器中的兼容有一定见解。</p>
+    <p class="fb">加分项：</p>
+    <P>良好的英语基础，英语文档读写无障碍，能够用英语进行较为流利的专业交流。</P>
+    <p>熟悉 Photoshop 和 Illustrator，能借助它们完成必要的动画辅助处理。</p>
+  </div>
+  <div class="animationWork">
+    <div class="title">动画/特效 作品展示</div>
+    <div class="work">
+      <p class="workName"><a href="https://codepen.io/chenxinnn/pen/VJyNmB" target="_blank">《猫神》</a></p>
+      <a class="gifLink" href="https://codepen.io/chenxinnn/pen/VJyNmB" target="_blank">
+        <img src="./The Cat God.gif" alt="The Cat God">
+      </a>
+      <p class="workDesc">这是一个 svg 动画。动画运用到了大量的 svg 滤镜与 morph svg 技术。猫神眼圈周围的火焰效果是通过叠加 feGaussianBlur  与 feColorMatrix 滤镜完成的。鼻孔的喷气特效混合了 feTurbulence 与 feDisplacementMap 滤镜。眨眼则是借助 morph SVG 完成的。动画每秒有超过 280 个 DOM 在移动，但是通过优化依旧能达到 60 FPS。兼容到 IE10，能够很好的实现响应式。</p>
+    </div>
+    <div class="work">
+        <p class="workName"><a href="https://codepen.io/chenxinnn/pen/Xwowxz" target="_blank">《火烈鸟》</a></p>
+        <a class="gifLink" href="https://codepen.io/chenxinnn/pen/Xwowxz" target="_blank">
+          <img src="./flamingo.gif" alt="flamingo">
+        </a>
+        <p class="workDesc">这个动画作品使用了一个叫做 ZDog 的库。ZDog 是一个伪 3D 的 JavaScript 引擎，其原理是在 canvas 或者 svg 上作画，通过视觉欺骗从而达到“看起来是3D”但实际上是 2D 的效果。因为不是真正的 3D 引擎，所以使用门槛低，适合平时制作一些简单的 3D 动画。但是也正因为 ZDog 是一个伪 3D 引擎，所以它无法很好的解决 z-fighting 的问题，在实际的业务中还需要谨慎使用。兼容性其实就是 canvas 和 svg 的兼容性，可以兼容到 IE9，也可以很好的实现响应式。</p>
+    </div>
+    <div class="work">
+        <p class="workName"><a href="https://codepen.io/chenxinnn/pen/qGKPOE" target="_blank">《滑动文字特效》</a></p>
+        <a class="gifLink" href="https://codepen.io/chenxinnn/pen/qGKPOE" target="_blank">
+          <img src="./sliding text effect.gif" alt="sliding text effect">
+        </a>
+        <p class="workDesc">将粉色与黑色的字重合在一起，再利用 transform: skew() 将它们拉伸到对称的角度，然后使用 overflow: hidden 将两种颜色的文字各遮掉一半，再将 transform: translate() 的值与鼠标位置相关联，从而实现交互效果。没有使用到很新的 CSS 属性，所以可以兼容到 IE9。可以很好的实现响应式。</p>
+    </div>
+    <div class="work">
+        <p class="workName"><a href="https://codepen.io/chenxinnn/pen/OYoyMZ" target="_blank">《剪切文字特效》</a></p>
+        <a class="gifLink" href="https://codepen.io/chenxinnn/pen/OYoyMZ" target="_blank">
+          <img src="./cutting text effect.gif" alt="Tcutting text effect">
+        </a>
+        <p class="workDesc">这个特效其实使用了三层相同的文字。当鼠标悬浮在文字上时，顶层的文字被一个与背景颜色相同的 div 元素插入，然后将 opacity 减到 0 实现渐变消失。
+            第二层和第三层的文字利用 clip-path 让第二层的文字只显示左半边，让第三层的文字只显示右半边，在鼠标悬停的时候让右半边文字位移一段距离，从而实现剪切效果。由于使用了 clip-path， 不兼容 IE 与使用旧内核的 Edge 浏览器，可以很好的实现响应式。</p>
+    </div>
+    <div class="work">
+        <p class="workName"><a href="https://codepen.io/chenxinnn/pen/oRKBQo" target="_blank">《阴影》</a></p>
+        <a class="gifLink" href="https://codepen.io/chenxinnn/pen/oRKBQo" target="_blank">
+          <img src="./shadow.gif" alt="shadow">
+        </a>
+        <p class="workDesc">这是一个使用了 Three.js 的 WebGL 动画，几何模型本身很简单，但是通过色彩的运用、光与阴影的结合，营造出了一种极简的美感。用户可以使用鼠标转动模型与模型交互。兼容到 IE11，能够很好的实现响应式。</p>
+    </div>
+    <div class="work">
+        <p class="workName"><a href="https://codepen.io/chenxinnn/pen/GaRGWd" target="_blank">《魔方》</a></p>
+        <a class="gifLink" href="https://codepen.io/chenxinnn/pen/GaRGWd" target="_blank">
+          <img src="./cube.gif" alt="cube">
+        </a>
+        <p class="workDesc">这个动画是借助  css 3d transform 和 svg 实现的。由于 css 的 3D transform不能直接作用于 svg 元素 (因为 svg 有自己独立的坐标系，而且是二维的)，所以需要在 svg 外面包裹一层 div，然后把 3d transform 作用在 div 上，从而间接的实现 svg 的三维变换。由于使用了 css 3d transform， 所以不兼容 IE。能够很好的实现响应式。</p>
+    </div>
+    <div class="work">
+        <p class="workName"><a href="https://codepen.io/chenxinnn/pen/mYVmvR" target="_blank">《3D卡片特效》</a></p>
+        <a class="gifLink" href="https://codepen.io/chenxinnn/pen/mYVmvR" target="_blank">
+          <img src="./3d card.gif" alt="3d card">
+        </a>
+        <p class="workDesc">一个利用 css 3d transform 完成的卡片展示特效，可以根据鼠标的移动展示卡片的不同角度。所以不兼容 IE。能够很好的实现响应式。</p>
+    </div>
+    <div class="work">
+        <p class="workName"><a href="https://codepen.io/chenxinnn/pen/dEbjdB" target="_blank">《知乎 logo 动画》</a></p>
+        <a class="gifLink" href="https://codepen.io/chenxinnn/pen/dEbjdB" target="_blank">
+          <img src="./zhihu.gif" alt="zhihu">
+        </a>
+        <p class="workDesc">动画的前半段是一个经典的 svg 路径动画，通过调节 svg 的 stroke-dashoffset 与 stroke-dashoffset 实现。后半段是通过 svg 滤镜实现的一个霓虹效果。兼容到 IE10，能够很好的实现响应式。</p>
+    </div>
+    <div class="work">
+        <p class="workName"><a href="https://codepen.io/chenxinnn/pen/bPgNJN" target="_blank">《月相》</a></p>
+        <a class="gifLink" href="https://codepen.io/chenxinnn/pen/bPgNJN" target="_blank">
+          <img src="./lunar phase.gif" alt="lunar phase">
+        </a>
+        <p class="workDesc">这是一个使用了自定义 glsl 语言的 WebGL 动画。球体表面的黑白渐变是通过 glsl 着色器语言编写 vertex shader 和 fragment shader 实现的，也就是说这个黑白渐变这就是球体本身的材料颜色，而不是通过光源与阴影实现的。兼容到 IE11，能够很好的实现响应式。</p>
+    </div>
+    <div class="work">
+        <p class="workName"><a href="https://codepen.io/chenxinnn/pen/qGyOMp" target="_blank">《通过 border radius 实现的流体特效》</a></p>
+        <a class="gifLink" href="https://codepen.io/chenxinnn/pen/qGyOMp" target="_blank">
+          <img src="./border radius.gif" alt="border radius">
+        </a>
+        <p class="workDesc">border-radius 最多可以接收八个参数，配合 css animation, 不需要使用 svg, 就可以实现很多有趣的流体特效。兼容到 IE10，可以很好的实现响应式。</p>
+    </div>
+    <div class="work">
+        <p class="workName"><a href="https://codepen.io/chenxinnn/pen/wLeOvw" target="_blank">《阴阳加载动画》</a></p>
+        <a class="gifLink" href="https://codepen.io/chenxinnn/pen/wLeOvw" target="_blank">
+          <img src="./yinYang loader.gif" alt="The Cat God">
+        </a>
+        <p class="workDesc">动画本身并不复杂，难的地方在于怎么样把这个动画做成响应式的同时保证八卦图的长宽比不变。最后发现借助 svg 的 preserveAspectRatio="xMidYMid slice" 可以实现这个效果: 左右两扇门的实际大小比 viewport 要大，随着窗口的缩小只居中显示一部分svg。兼容到 IE9，可以很好的实现响应式。</p>
+    </div>
+    <div class="work">
+        <p class="workName"><a href="https://codepen.io/chenxinnn/pen/GaYGYZ" target="_blank">《视差滚动特效》</a></p>
+        <a class="gifLink" href="https://codepen.io/chenxinnn/pen/GaYGYZ" target="_blank">
+          <img src="./parallax scrolling1.gif" alt="parallax scrolling1">
+        </a>
+        <p class="workDesc">视差滚动特效第一次出现在2014年，如今我们在很多网站上都可以看到它的身影。它的原理是通过前景与背景移动速度的差别，营造出一种奇妙的视觉体验。视差滚动一般分为两种：一种是前景和背景都动，但是前景比背景动得快；还有一种是只有前景动，背景不动。前者既可以通过 js 实现，也可以通过 css 3d transform 实现。js实现的兼容性比较好，css 实现的性能比较好。后者主要通过 background-attachment: fixed 实现，比较简单。GIF 展示的是第一种。
+          </p>
+    </div>
+  </div>
+  <div class="webSiteWork">
+    <div class="title">独立网站展示</div>
+    <div class="work">
+        <p class="workName"><a href="https://www.globalhikingchina.com" target="_blank">《Global Hiking》</a></p>
+        <a class="gifLink" href="https://www.globalhikingchina.com" target="_blank">
+          <img src="./globalhiking.gif" alt="parallax scrolling1">
+        </a>
+        <p class="workDesc">帮一个旅游初创公司制作的官方网站</p>
+    </div>
+
+  </div>
+  <div class="education">
+    <div class="title">教育经历</div>
+    <p class="fb">本科：</p>
+    <p>西南交通大学 / 工程结构分析 / 2012.09 - 2016.09</p>
+    <p>GPA 3.4/4</p>
+    <p class="fb">硕士：</p>
+    <p>代尔夫特理工大学 / 土木工程 / 2016.09 - 2018.10</p>
+    <p>均分 7.9/10，TOP20%</p>
+  </div>
+  <div class="others">
+    <div class="title">其他</div>
+    <p>创办了<a href="https://juejin.im/post/5d14bcc46fb9a07f0052ecdf">《Web 动画周报》</a>。</p>
+    <p>语雀-前端九部成员。参与编辑前端九部的<a href="https://www.yuque.com/fe9/basic">《入门者手册》</a>。</p>
+  </div>
+</body>
+</html>
